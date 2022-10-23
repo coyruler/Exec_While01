@@ -11,15 +11,24 @@ namespace Q
         static void Main(string[] args)
         {
             //1+2+3+4+5+...+n<105
-            int value = 0;
-            int result = 0;
-            while (result < 105)
-            {
-                value++;
-                result += value;
-            }
+            //int value = 0;
+            //int result = 0;
+            //while (result < 105)
+            //{
+            //    value++;
+            //    result += value;
+            //}
             
-            Console.WriteLine(value - 1);
+            //Console.WriteLine(value - 1);
+
+            int value2 = 0;
+            int result2 = 0;
+            while (result2 < 105)
+            {
+                value2++;
+                result2 = (1 + value2) * value2 / 2;
+            }
+            Console.WriteLine(value2 - 1);
 
 
             //105-1-2-3...-n<0
